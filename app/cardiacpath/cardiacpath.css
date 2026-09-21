@@ -1,0 +1,418 @@
+.cp {
+  --navy: #101d2f;
+  --ink: #16233a;
+  --muted: #5a6b85;
+  --line: #e5ebf3;
+  --paper: #ffffff;
+  --canvas: #f6f8fc;
+  --pulse: #fd3e56;
+  --emergent: #8e2430;
+  --attention: #8a5a00;
+  --track: #1e7a4d;
+  min-height: 100vh;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+}
+
+.cp * {
+  box-sizing: border-box;
+}
+
+.cp a {
+  color: inherit;
+}
+
+.cp a:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 3px;
+}
+
+.cp-skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 20;
+  background: #fff;
+  color: var(--navy);
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.cp-skip:focus {
+  top: 0.75rem;
+}
+
+.cp-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.cp-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--navy);
+  color: #fff;
+}
+
+.cp-header a:focus-visible {
+  outline-color: #fff;
+}
+
+.cp-logo {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+
+.cp-header-link {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding: 0.35rem 0;
+}
+
+.cp-header-link:hover {
+  border-bottom-color: #fff;
+}
+
+.cp-wrap {
+  width: min(46rem, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.cp-intro {
+  background: var(--navy);
+  color: #fff;
+  padding: 2.5rem 0 2.75rem;
+}
+
+.cp-kicker {
+  margin: 0 0 0.85rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cp h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.cp-lede {
+  margin: 1.1rem 0 0;
+  max-width: 38rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.cp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+
+.cp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.1rem;
+  background: #fff;
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.7rem;
+}
+
+.cp-button:hover {
+  background: #eef2f8;
+}
+
+.cp-textlink {
+  color: #fff;
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.cp-disclosure {
+  margin: 1.4rem 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.cp-contents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cp-contents a {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.88rem;
+  text-underline-offset: 3px;
+}
+
+.cp-section {
+  padding: 2.4rem 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 4.75rem;
+}
+
+#content {
+  scroll-margin-top: 4.75rem;
+}
+
+.cp-section h2 {
+  margin: 0 0 0.9rem;
+  color: var(--navy);
+  font-size: 1.45rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.cp-section p,
+.cp-note {
+  margin: 0 0 0.9rem;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.cp-section p:last-child,
+.cp-note:last-child {
+  margin-bottom: 0;
+}
+
+.cp-note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.cp-follow {
+  margin-top: 1.35rem;
+}
+
+.cp-doors {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .cp-doors {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cp-door {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  padding: 1.15rem 1.15rem 1.2rem;
+}
+
+.cp-door h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
+.cp-door p {
+  margin: 0 0 0.9rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.cp-door a {
+  color: var(--navy);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.cp-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.cp-steps li {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: 1.75rem 1fr;
+  gap: 0.75rem;
+  margin: 0 0 0.95rem;
+  line-height: 1.55;
+}
+
+.cp-steps li::before {
+  content: counter(step);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.cp-rule {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 0.35rem 1rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.cp-rule:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.cp-tier {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cp-tier.emergent {
+  color: var(--emergent);
+}
+
+.cp-tier.attention {
+  color: var(--attention);
+}
+
+.cp-tier.track {
+  color: var(--track);
+}
+
+.cp-rule p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.cp-rule strong {
+  font-weight: 700;
+}
+
+.cp-quote {
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--emergent);
+  border-radius: 0.7rem;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.cp-sources {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cp-sources li {
+  margin: 0 0 0.95rem;
+  line-height: 1.5;
+}
+
+.cp-sources a {
+  color: var(--navy);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.cp-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.cp-foot img {
+  height: 22px;
+  width: auto;
+}
+
+@media (max-width: 640px) {
+  .cp-header {
+    padding-inline: 1rem;
+  }
+
+  .cp-logo {
+    height: 22px;
+  }
+
+  .cp-rule {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .cp-intro {
+    padding-top: 2rem;
+  }
+}
+
+@media print {
+  .cp-header {
+    position: static;
+  }
+
+  .cp-skip,
+  .cp-contents {
+    display: none;
+  }
+
+  .cp,
+  .cp-intro,
+  .cp-header {
+    background: #fff;
+    color: #000;
+  }
+
+  .cp-lede,
+  .cp-disclosure,
+  .cp-kicker,
+  .cp-header-link,
+  .cp-textlink,
+  .cp-contents a {
+    color: #000;
+  }
+}
