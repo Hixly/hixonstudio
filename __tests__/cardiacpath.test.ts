@@ -38,4 +38,15 @@ describe("CardiacPath board copy", () => {
     expect(copy.toLowerCase()).not.toContain("hipaa compliant");
     expect(copy.toLowerCase()).not.toContain("hipaa-compliant");
   });
+
+  it("matches the queue a fresh demo actually shows", () => {
+    expect(copy).toContain("New or worsening breathlessness reported.");
+    expect(copy).toContain("Up 3.8 lb in 24 hours. Possible fluid retention.");
+    expect(copy).toContain("Reported chest pain or pressure at today's check-in.");
+    expect(copy).toContain("Restart demo");
+    expect(copy).toContain("Stay in this tab");
+    expect(copy).not.toContain("moves to the top");
+    expect(copy).not.toContain("On track. On track");
+    expect(copy).not.toContain("Chest pain reported.");
+  });
 });

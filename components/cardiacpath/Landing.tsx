@@ -12,7 +12,7 @@ import {
   tierLabel,
 } from "@/lib/cardiacpath";
 
-function DemoLink({
+function ExternalLink({
   href,
   className,
   children,
@@ -36,7 +36,7 @@ export default function Landing() {
         Skip to content
       </a>
       <header className="cp-header">
-        <a href="#content">
+        <a className="cp-brand" href="#content">
           <img
             className="cp-logo"
             src="/cardiacpath/logo-h-white.png"
@@ -45,35 +45,35 @@ export default function Landing() {
             height={28}
           />
         </a>
-        <DemoLink className="cp-header-link" href={DEMO_URL}>
+        <ExternalLink className="cp-header-link" href={DEMO_URL}>
           {narrative.headerDemo}
-        </DemoLink>
+        </ExternalLink>
       </header>
-      <div className="cp-intro">
-        <div className="cp-wrap" id="content">
-          <p className="cp-kicker">{narrative.kicker}</p>
-          <h1>{narrative.title}</h1>
-          <p className="cp-lede">{narrative.lede}</p>
-          <div className="cp-actions">
-            <DemoLink className="cp-button" href={DEMO_URL}>
-              {narrative.openDemo}
-            </DemoLink>
-            <a className="cp-textlink" href="#morning">
-              {narrative.howMorning}
-            </a>
-          </div>
-          <p className="cp-disclosure">{DISCLOSURE}</p>
-          <ul className="cp-contents">
-            {contents.map((item) => (
-              <li key={item.href}>
-                <a href={item.href}>{item.label}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
 
       <main>
+        <div className="cp-intro">
+          <div className="cp-wrap" id="content">
+            <p className="cp-kicker">{narrative.kicker}</p>
+            <h1>{narrative.title}</h1>
+            <p className="cp-lede">{narrative.lede}</p>
+            <div className="cp-actions">
+              <ExternalLink className="cp-button" href={DEMO_URL}>
+                {narrative.openDemo}
+              </ExternalLink>
+              <a className="cp-textlink" href="#morning">
+                {narrative.howMorning}
+              </a>
+            </div>
+            <p className="cp-disclosure">{DISCLOSURE}</p>
+            <ul className="cp-contents">
+              {contents.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
         <section className="cp-section" id="gap">
           <div className="cp-wrap">
             <h2>{narrative.gapTitle}</h2>
@@ -86,16 +86,17 @@ export default function Landing() {
         <section className="cp-section" id="doors">
           <div className="cp-wrap">
             <h2>{narrative.doorsTitle}</h2>
+            <p>{narrative.doorsNote}</p>
             <div className="cp-doors">
               <article className="cp-door">
                 <h3>{narrative.patientTitle}</h3>
                 <p>{narrative.patientBody}</p>
-                <DemoLink href={PATIENT_URL}>{narrative.patientCta}</DemoLink>
+                <ExternalLink href={PATIENT_URL}>{narrative.patientCta}</ExternalLink>
               </article>
               <article className="cp-door">
                 <h3>{narrative.teamTitle}</h3>
                 <p>{narrative.teamBody}</p>
-                <DemoLink href={CLINICIAN_URL}>{narrative.teamCta}</DemoLink>
+                <ExternalLink href={CLINICIAN_URL}>{narrative.teamCta}</ExternalLink>
               </article>
             </div>
           </div>
@@ -128,9 +129,7 @@ export default function Landing() {
               ))}
               <div className="cp-rule">
                 <div className="cp-tier track">{tierLabel.track}</div>
-                <p>
-                  <strong>{tierLabel.track}.</strong> {ON_TRACK}
-                </p>
+                <p>{ON_TRACK}</p>
               </div>
             </div>
             {narrative.rulesNotes.map((note, index) => (
@@ -176,7 +175,7 @@ export default function Landing() {
             <ul className="cp-sources">
               {sources.map((source) => (
                 <li key={source.href}>
-                  <a href={source.href}>{source.title}</a>
+                  <ExternalLink href={source.href}>{source.title}</ExternalLink>
                   {". "}
                   {source.detail}
                 </li>
@@ -193,7 +192,9 @@ export default function Landing() {
           width={104}
           height={22}
         />
-        <p>{narrative.foot}</p>
+        <p>
+          {DISCLOSURE} {narrative.foot}
+        </p>
       </footer>
     </>
   );

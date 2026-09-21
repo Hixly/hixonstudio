@@ -21,6 +21,7 @@
 
 .cp a {
   color: inherit;
+  text-underline-offset: 0.18em;
 }
 
 .cp a:focus-visible {
@@ -79,17 +80,25 @@
   width: auto;
 }
 
+.cp-brand,
+.cp-button,
+.cp-skip {
+  text-decoration: none;
+}
+
+.cp-header-link,
+.cp-textlink,
+.cp-contents a,
+.cp-door a,
+.cp-sources a {
+  text-decoration: underline;
+}
+
 .cp-header-link {
   color: #fff;
   font-size: 0.95rem;
   font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
   padding: 0.35rem 0;
-}
-
-.cp-header-link:hover {
-  border-bottom-color: #fff;
 }
 
 .cp-wrap {
@@ -136,7 +145,7 @@
   margin-top: 1.6rem;
 }
 
-.cp-button {
+a.cp-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +165,6 @@
 .cp-textlink {
   color: #fff;
   font-weight: 600;
-  text-underline-offset: 3px;
 }
 
 .cp-disclosure {
@@ -178,7 +186,6 @@
 .cp-contents a {
   color: rgba(255, 255, 255, 0.88);
   font-size: 0.88rem;
-  text-underline-offset: 3px;
 }
 
 .cp-section {
@@ -253,7 +260,6 @@
 .cp-door a {
   color: var(--navy);
   font-weight: 700;
-  text-underline-offset: 3px;
 }
 
 .cp-steps {
@@ -352,7 +358,6 @@
 .cp-sources a {
   color: var(--navy);
   font-weight: 700;
-  text-underline-offset: 3px;
 }
 
 .cp-foot {
