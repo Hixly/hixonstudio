@@ -7,9 +7,6 @@ import "@fontsource/fraunces/400-italic.css";
 import "@fontsource/fraunces/700.css";
 import "@fontsource/fraunces/700-italic.css";
 import "./globals.css";
-import StarCanvas from "@/components/StarCanvas";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hixon.studio"),
@@ -41,14 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen overflow-x-hidden">
-        <StarCanvas />
-        <Nav />
-        <main className="relative pt-20" style={{ zIndex: 10 }}>
-          {children}
-        </main>
-        <Footer />
-      </body>
+      <body className="min-h-screen overflow-x-hidden">{children}</body>
     </html>
   );
 }
