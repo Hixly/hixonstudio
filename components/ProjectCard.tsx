@@ -216,6 +216,11 @@ export default function ProjectCard({ project }: { project: Project }) {
             style={{
               color: "rgba(255,255,255,0.2)",
               letterSpacing: "0.04em",
+              minWidth: 0,
+              marginRight: "0.75rem",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              whiteSpace: "nowrap",
             }}
           >
             {project.domain}

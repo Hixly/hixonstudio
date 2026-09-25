@@ -6,10 +6,12 @@ describe("projects", () => {
       .filter((project) => project.status === "live")
       .map((project) => project.name);
 
-    expect(liveProjects.slice(0, 3)).toEqual([
+    expect(liveProjects.slice(0, 5)).toEqual([
       "Hackyard",
-      "DemoBro",
+      "Jev Board",
       "Ephpha",
+      "WhatColor",
+      "DemoBro",
     ]);
   });
 
