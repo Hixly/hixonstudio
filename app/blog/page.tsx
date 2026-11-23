@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: `${title} — Hixon.Studio`,
+    title: `${title} | Hixon.Studio`,
     description,
     url: "/blog",
     type: "website",
   },
-  twitter: { title: `${title} — Hixon.Studio`, description },
+  twitter: { title: `${title} | Hixon.Studio`, description },
 };
 
 export default function BlogPage() {

@@ -65,7 +65,7 @@ const recent: WritingLink[] = [
     platform: "substack",
     date: "July 17, 2026",
     title:
-      "I'm Building Hackyard — Small AI Hackathons Where Every Project Actually Gets Seen",
+      "I'm Building Hackyard: Small AI Hackathons Where Every Project Actually Gets Seen",
     excerpt:
       "I've watched too many hackathons turn into lottery tickets. So I'm building the opposite. It's called Hackyard, and the whole idea fits in one sentence: small, community-driven AI hackathons where every single project gets eyes on it.",
     href: "https://hixly.substack.com/p/im-building-hackyard-small-ai-hackathons",
@@ -103,7 +103,7 @@ const platforms: Platform[] = [
     id: "hackernoon",
     title: "Technical essays and build write-ups.",
     description:
-      "Deep dives on how I built each project — stacks, decisions, mistakes, and the parts of the process other write-ups skip.",
+      "Deep dives on how I built each project: stacks, decisions, mistakes, and the parts of the process other write-ups skip.",
     href: "https://hackernoon.com/u/hixon",
     cta: "Read on HackerNoon",
   },
@@ -178,7 +178,7 @@ export default function BlogClient() {
             maxWidth: "32rem",
           }}
         >
-          The process, the rabbit holes, the wins, the failures — and what I&apos;m
+          The process, the rabbit holes, the wins, the failures, and what I&apos;m
           learning while turning ideas into real projects.
         </p>
       </div>

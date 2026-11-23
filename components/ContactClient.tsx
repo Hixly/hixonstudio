@@ -9,7 +9,7 @@ import { prefersReducedMotion, useReducedMotion } from "@/lib/useReducedMotion";
 gsap.registerPlugin(ScrollTrigger);
 
 const SUBHEAD =
-  "Got an idea, a question, or want to collaborate? Send a note — I read everything that comes through.";
+  "Got an idea, a question, or want to collaborate? Send a note. I read everything that comes through.";
 
 const alts = [
   {
@@ -573,7 +573,7 @@ export default function ContactClient() {
           opacity: 0,
         }}
       >
-        Reply time varies — but every message gets read.
+        Reply time varies, but every message gets read.
       </p>
     </div>
   );

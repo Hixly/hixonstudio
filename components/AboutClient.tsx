@@ -80,7 +80,7 @@ export default function AboutClient() {
             lineHeight: 1.7,
           }}
         >
-          I build under Hixon.Studio — a place to test ideas, ship them
+          I build under Hixon.Studio, a place to test ideas, ship them
           publicly, and figure things out in the open.
         </p>
       </div>
@@ -104,7 +104,7 @@ export default function AboutClient() {
           <p>
             Back in February 2026, I started getting pulled deeper into AI and
             the tech world in general. It started with curiosity. I already knew
-            the basics — ChatGPT had been around for years, and like most people
+            the basics. ChatGPT had been around for years, and like most people
             around me, I leaned on it every day. But I wanted to understand what
             was actually happening underneath it.
           </p>
@@ -112,14 +112,14 @@ export default function AboutClient() {
             I don&apos;t come from a traditional software background. For over
             six years I&apos;ve been a software production manager at Pump Peelz,
             a company that makes custom, decorative patches and stickers for
-            insulin pumps and CGMs — turning medical devices people have no
+            insulin pumps and CGMs, turning medical devices people have no
             choice but to wear into something that finally feels like their own.
             I work with code there every day: building it into our software
             files, uploading new products to the site, and keeping track of the
             data behind all of it.
           </p>
           <p>
-            It&apos;s not the standard picture of a tech job — but I&apos;ve come
+            It&apos;s not the standard picture of a tech job, but I&apos;ve come
             to believe there isn&apos;t one. There are countless paths to being
             handed a problem inside a codebase or a website and finding your way
             to a solution. AI has quietly collapsed the old idea that only a
@@ -129,13 +129,13 @@ export default function AboutClient() {
             Trying to figure out what OpenClaw was opened a wormhole. OpenClaw
             pulled me into Claude Code. Claude Code pulled me into agents, then
             Cursor, then everything after it. The deeper I went, the more I
-            realized this wasn&apos;t a gimmick — it was a real glimpse of where
+            realized this wasn&apos;t a gimmick. It was a real glimpse of where
             the world could be heading, and a tool that could change my life and
             a lot of other people&apos;s.
           </p>
           <p>
             A lot of people still don&apos;t know what&apos;s genuinely possible
-            right now — through frontier models or open source. And open source
+            right now, through frontier models or open source. And open source
             is catching up faster than most expected, which I think is a good
             thing. It keeps the game fair and honest, instead of a handful of
             labs deciding who does and doesn&apos;t get to use this kind of
@@ -189,7 +189,7 @@ export default function AboutClient() {
           className="text-sm mt-6"
           style={{ color: "rgba(255,255,255,0.4)", lineHeight: 1.75 }}
         >
-          Claude Code and Cursor daily for building — writing code, navigating
+          Claude Code and Cursor daily for building: writing code, navigating
           codebases, and mapping out projects. ChatGPT 5.6 for visual direction,
           layouts, coloring, and shaping how things feel.
         </p>
@@ -284,13 +284,13 @@ export default function AboutClient() {
             }}
           >
             <p>
-              Right now, most of what I&apos;m building points toward Hackyard —
+              Right now, most of what I&apos;m building points toward Hackyard:
               small, community-driven hackathons where every project actually
               gets seen. I&apos;m not just trying to launch a product; I&apos;m
               trying to grow a community around it.
             </p>
             <p>
-              A big part of that is promoting other builders — the ones who&apos;d
+              A big part of that is promoting other builders, the ones who&apos;d
               otherwise go unnoticed. If AI is going to let more people make real
               things, then the least I can do is help make sure that work gets in
               front of people instead of quietly disappearing.
@@ -298,7 +298,7 @@ export default function AboutClient() {
             <p>
               I&apos;m figuring it out as I go, learning from my successes and my
               failures at the same time. That&apos;s what Hixon.Studio is really
-              for — to build, test, learn, fail, improve, and share the whole
+              for: to build, test, learn, fail, improve, and share the whole
               process out in the open.
             </p>
           </div>
@@ -309,7 +309,7 @@ export default function AboutClient() {
               letterSpacing: "0.04em",
             }}
           >
-            — Hix
+            Hix
           </p>
         </div>
       </section>

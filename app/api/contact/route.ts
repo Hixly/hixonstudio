@@ -67,7 +67,7 @@ export async function POST(req: Request) {
     `\n` +
     `${message}\n` +
     `\n` +
-    `— Sent from hixon.studio/contact`;
+    `Sent from hixon.studio/contact`;
 
   try {
     const { error } = await resend.emails.send({

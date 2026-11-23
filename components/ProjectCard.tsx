@@ -229,6 +229,8 @@ export default function ProjectCard({ project }: { project: Project }) {
           <span
             className="visit-label text-xs"
             style={{
+              flexShrink: 0,
+              whiteSpace: "nowrap",
               fontFamily: "Fraunces, Georgia, serif",
               fontStyle: "italic",
               color: "rgba(255,255,255,0.7)",

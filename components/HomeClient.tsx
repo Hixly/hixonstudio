@@ -13,7 +13,7 @@ import { prefersReducedMotion, useReducedMotion } from "@/lib/useReducedMotion";
 gsap.registerPlugin(ScrollTrigger);
 
 const BUILD_COPY =
-  "Anyone can generate code. Not everyone can decide what should exist, why it should exist, or what it should feel like.\n\nThe distance between imagination and execution has collapsed. AI didn't remove the need for taste, patience, or direction — it made those things matter more.\n\nHixon.Studio is where I build, test, learn, and share the process publicly.";
+  "Anyone can generate code. Not everyone can decide what should exist, why it should exist, or what it should feel like.\n\nThe distance between imagination and execution has collapsed. AI didn't remove the need for taste, patience, or direction. It made those things matter more.\n\nHixon.Studio is where I build, test, learn, and share the process publicly.";
 
 export default function HomeClient({
   recentPosts,
@@ -355,7 +355,7 @@ export default function HomeClient({
               ·
             </span>
             <span>
-              last commit {github.lastPushedAt ? timeAgo(github.lastPushedAt) : "—"}
+              last commit {github.lastPushedAt ? timeAgo(github.lastPushedAt) : "n/a"}
             </span>
             <span style={{ color: "rgba(255,255,255,0.2)", padding: "0 0.75em" }}>
               ·

@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.hixon.studio"),
   title: {
     default: "Hixon.Studio",
-    // Pages set a bare title ("About"); this renders it as "About — Hixon.Studio".
-    template: "%s — Hixon.Studio",
+    // Pages set a bare title ("About"); this renders it as "About | Hixon.Studio".
+    template: "%s | Hixon.Studio",
   },
-  description: "AI developer. Builder. Making things worth using.",
+  description: "Building in public, promoting builders, and figuring it out in the open.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Hixon.Studio",
-    description: "AI developer. Builder. Making things worth using.",
+    description: "Building in public, promoting builders, and figuring it out in the open.",
     url: "https://www.hixon.studio",
     siteName: "Hixon.Studio",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hixon.Studio",
-    description: "AI developer. Builder. Making things worth using.",
+    description: "Building in public, promoting builders, and figuring it out in the open.",
   },
 };
 

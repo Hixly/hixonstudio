@@ -20,13 +20,23 @@ export const projects: Project[] = [
     status: "live",
   },
   {
-    name: "Jev Board",
-    domain: "jevboard.dev",
-    url: "https://www.jevboard.dev",
-    logo: "/logos/jevboard.png",
+    name: "Reroll",
+    domain: "reroll.click",
+    url: "https://www.reroll.click",
+    logo: "/logos/reroll.png",
     description:
-      "A talking board where Ghost Jev picks every word. Ask a question and a decision model, not a chatbot, chooses the reply while the planchette spells it out.",
-    tags: ["Next.js", "TypeSafe", "Railway"],
+      "A Chrome extension that reloads YouTube past the ads, so your video starts without one. Got an ad? Reroll it.",
+    tags: ["Chrome Extension", "JavaScript", "Stripe"],
+    status: "live",
+  },
+  {
+    name: "KindlyTap",
+    domain: "kindlytap.com",
+    url: "https://www.kindlytap.com",
+    logo: "/logos/kindlytap.svg",
+    description:
+      "Countertop NFC stands for local businesses. Customers tap their phone and your Google review page opens. No app needed.",
+    tags: ["Next.js", "NFC", "Stripe"],
     status: "live",
   },
   {
@@ -50,13 +60,13 @@ export const projects: Project[] = [
     status: "live",
   },
   {
-    name: "DemoBro",
-    domain: "demobro.video",
-    url: "https://www.demobro.video",
-    logo: "/logos/demobro.png",
+    name: "Jev Board",
+    domain: "jevboard.dev",
+    url: "https://www.jevboard.dev",
+    logo: "/logos/jevboard.png",
     description:
-      "An AI demo-video maker that turns a live app and its GitHub repo into a polished product walkthrough. No manual screen recording required.",
-    tags: ["Next.js", "AI", "Playwright"],
+      "A talking board where Ghost Jev picks every word. Ask a question and a decision model, not a chatbot, chooses the reply while the planchette spells it out.",
+    tags: ["Next.js", "TypeScript", "Railway"],
     status: "live",
   },
   {
@@ -68,6 +78,26 @@ export const projects: Project[] = [
       "A hands-free AI assistant for Windows that drives your browser by voice. Say what you want and it navigates, clicks, types, and reads pages back to you.",
     tags: ["Electron", "Gemini", "Voice"],
     status: "live",
+  },
+  {
+    name: "Rain on Glass",
+    domain: "rain-on-glass-production.up.railway.app",
+    url: "https://rain-on-glass-production.up.railway.app",
+    logo: "/logos/rain-on-glass.svg",
+    description:
+      "An interactive rainy window at night. Wipe the fogged glass and watch it steam back up. Built with Claude Opus 5.5.",
+    tags: ["WebGL", "Shaders", "Creative Coding"],
+    status: "live",
+  },
+  {
+    name: "DemoBro",
+    domain: "demobro.video",
+    url: "https://www.demobro.video",
+    logo: "/logos/demobro.png",
+    description:
+      "An AI demo-video maker that turns a live app and its GitHub repo into a polished product walkthrough. No manual screen recording required.",
+    tags: ["Next.js", "AI", "Playwright"],
+    status: "in-progress",
   },
   {
     name: "Pluit",
@@ -88,15 +118,5 @@ export const projects: Project[] = [
       "A simple search engine built around saving energy. Dark by design, like the nostalgic Blackle, but made for today.",
     tags: ["React", "Vite", "Tailwind"],
     status: "in-progress",
-  },
-  {
-    name: "Rain on Glass",
-    domain: "rain-on-glass-production.up.railway.app",
-    url: "https://rain-on-glass-production.up.railway.app",
-    logo: "/logos/rain-on-glass.svg",
-    description:
-      "An interactive rainy window at night. Wipe the fogged glass and watch it steam back up. Built with Claude Opus 5.5.",
-    tags: ["WebGL", "Shaders", "Creative Coding"],
-    status: "live",
   },
 ];
