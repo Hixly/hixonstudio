@@ -13,7 +13,7 @@ import { prefersReducedMotion, useReducedMotion } from "@/lib/useReducedMotion";
 gsap.registerPlugin(ScrollTrigger);
 
 const BUILD_COPY =
-  "Anyone can generate code. Not everyone can decide what should exist, why it should exist, or what it should feel like.\n\nThe distance between imagination and execution has collapsed. AI didn't remove the need for taste, patience, or direction. It made those things matter more.\n\nHixon.Studio is where I build, test, learn, and share the process publicly.";
+  "I got into AI in February 2026 out of pure curiosity. I don't come from a traditional software background. By day I run software production at Pump Peelz.\n\nNow I build my own projects with Claude Code and Cursor, ship them, and see what sticks. Right now most of my time goes into Hackyard.\n\nThis site is where all of it lives, the wins and the stuff that didn't work.";
 
 export default function HomeClient({
   recentPosts,
@@ -234,7 +234,7 @@ export default function HomeClient({
             opacity: 0,
           }}
         >
-          Building in public · Promoting builders · Figuring it out in the open
+          I build things with AI and ship them in the open
         </p>
 
         <div
@@ -350,7 +350,7 @@ export default function HomeClient({
             className="mb-6 text-xs tracking-widest uppercase"
             style={{ color: "rgba(255,255,255,0.5)" }}
           >
-            <span>{github.publicRepos} repos</span>
+            <span>{github.publicRepos} {github.publicRepos === 1 ? "repo" : "repos"}</span>
             <span style={{ color: "rgba(255,255,255,0.2)", padding: "0 0.75em" }}>
               ·
             </span>
@@ -360,7 +360,7 @@ export default function HomeClient({
             <span style={{ color: "rgba(255,255,255,0.2)", padding: "0 0.75em" }}>
               ·
             </span>
-            <span>{github.totalStars} stars</span>
+            <span>{github.totalStars} {github.totalStars === 1 ? "star" : "stars"}</span>
           </p>
 
           {/* Currently in */}

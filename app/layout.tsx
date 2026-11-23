@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     // Pages set a bare title ("About"); this renders it as "About | Hixon.Studio".
     template: "%s | Hixon.Studio",
   },
-  description: "Building in public, promoting builders, and figuring it out in the open.",
+  description: "I build things with AI and ship them in the open.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Hixon.Studio",
-    description: "Building in public, promoting builders, and figuring it out in the open.",
+    description: "I build things with AI and ship them in the open.",
     url: "https://www.hixon.studio",
     siteName: "Hixon.Studio",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hixon.Studio",
-    description: "Building in public, promoting builders, and figuring it out in the open.",
+    description: "I build things with AI and ship them in the open.",
   },
 };
 
