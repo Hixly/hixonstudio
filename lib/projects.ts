@@ -81,7 +81,7 @@ export const projects: Project[] = [
   },
   {
     name: "Rain on Glass",
-    domain: "rain-on-glass-production.up.railway.app",
+    domain: "rain on glass",
     url: "https://rain-on-glass-production.up.railway.app",
     logo: "/logos/rain-on-glass.svg",
     description:
